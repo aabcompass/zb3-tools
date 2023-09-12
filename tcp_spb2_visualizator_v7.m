@@ -91,13 +91,13 @@ for j=1:100000
     if fix_color_map==1
         %imagesc(a1,double(pdm_2d_remap/50000), clims);
         gca = imagesc(a1,double(pdm_2d_pc)/integration, clims);colorbar(a1);
-        set(a1,'DataAspectRatio',[1 1 1])
-        %gca = imagesc(a2,double(pdm_2d_ki)/integration, clims);colorbar;
+        %set(a1,'DataAspectRatio',[1 1 1])
+        gca = imagesc(a2,double(pdm_2d_ki)/integration, clims);colorbar;
         %set(gca,'DataAspectRatio',[1 1 1])
     else
         gca = imagesc(a1,double(pdm_2d_pc)/integration);colorbar(a1);
-        set(gca,'DataAspectRatio',[1 1 1])
-        %gca = imagesc(a2,double(pdm_2d_ki)/integration);colorbar;
+        %set(gca,'DataAspectRatio',[1 1 1])
+        gca = imagesc(a2,double(pdm_2d_ki)/integration);colorbar;
         %set(gca,'DataAspectRatio',[1 1 1])
     end
     
